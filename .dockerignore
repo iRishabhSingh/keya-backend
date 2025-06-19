@@ -1,0 +1,43 @@
+# ===== Python Cache =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# ===== Virtual Environments =====
+venv/
+env/
+ENV/
+.venv/
+
+# ===== System Files =====
+.DS_Store
+Thumbs.db
+
+# ===== Version Control =====
+.git
+.gitignore
+
+# ===== Environment Variables =====
+.env
+*.env
+
+# ===== Editor Settings =====
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ===== Logs =====
+*.log
+logs/
+*.bak
+
+# ===== Static & Media (Optional) =====
+staticfiles/
+media/
+
+# ===== Docker Artifact Backups =====
+Dockerfile~
+docker-compose.yml~
