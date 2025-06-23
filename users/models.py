@@ -151,6 +151,7 @@ class Address(models.Model):
     is_primary = models.BooleanField(default=False)
     validation_status = models.CharField(max_length=10, choices=[('pending', 'Pending'), ('verified', 'Verified'), ('invalid', 'Invalid')], default='pending')
     # geolocation = models.PointField(blank=True, null=True) # Requires PostGIS setup: GEOS, GDAL, libspatialindex
+    deleted_at = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         verbose_name = _('address')
