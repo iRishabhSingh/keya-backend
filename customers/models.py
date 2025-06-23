@@ -16,6 +16,7 @@ class Customer(models.Model):
     lifetime_value = models.DecimalField(max_digits=12, decimal_places=2, default=0.00)
     order_count = models.IntegerField(default=0)
     created_at = models.DateTimeField(default=timezone.now) # Add created_at for customer record
+    deleted_at = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         verbose_name = _('customer')
